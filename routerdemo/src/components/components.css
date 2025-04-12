@@ -1,0 +1,181 @@
+/* Landing Page */
+.landing_container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    text-transform: uppercase;
+    background-image: url(https://c1.wallpaperflare.com/preview/841/396/995/cacti-cactus-succulent-flower.jpg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+}
+.landing_container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right:0; bottom: 0;
+    background: inherit;
+    filter: brightness(0.3);
+    z-index: 0;
+}
+
+.landing_container h1,
+.landing_container button  {
+    z-index: 1;
+}
+
+.cta_btn {
+    padding: 10px 80px;
+    margin: 10px;
+    color: white;
+    width: fit-content;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+
+/* Gallery */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plant_cards {
+    flex: 1 1 500px;
+    flex-wrap: wrap;
+    max-width: 450px;
+    padding: 3.5vh;
+    margin: 3vh;    
+    color: #212529;
+    background-color: #f8f9fa;
+    border: #f8f9fa solid 1px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgb(160, 160, 160);
+    transition: transform 0.1s ease;
+}
+
+.plant_cards:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.plant_img {
+    display: flex;
+    height: 400px;
+    width:100%;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.card-desc {
+    padding-bottom: 5px;
+}
+
+.card_price {
+    color: #0d6efd;
+}
+
+
+/* About Us */
+.about_container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f0fdf4;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(34, 197, 94, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1b4332;
+    text-align: justify;
+}
+
+.about_container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2f855a;
+    text-align: center;
+}
+
+.about_container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3748;
+}
+
+/* Contact Us */
+.customer_details {
+    max-width: 25vw;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f0fdf4;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.customer_details form div {
+    margin-bottom: 12px;
+}
+
+.customer_details span {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+    color: #333;
+}
+
+.customer_details input {
+    background-color: #f1faf4;
+}
+
+.customer_details input[type="text"],
+.customer_details input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.submit_btn_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0 !important;  
+}
+
+.customer_details input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.customer_details button {
+    padding: 10px 80px;
+    width: fit-content;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.customer_details button:hover {
+    background-color: #45a049;
+}
